@@ -20,8 +20,10 @@ const DesignPreview = ({configuration}: {configuration: Configuration}) => {
 
     const [showConfetti, setShowConfetti] = useState(false)
     useEffect(() => setShowConfetti(true))
+
     const router = useRouter()
     const {toast} = useToast()
+    
     const {id} = configuration
     const { user } = useKindeBrowserClient()
     const [isLoginModalOpen, setIsLoginModalOpen] = useState<boolean>(false)
@@ -158,7 +160,6 @@ const DesignPreview = ({configuration}: {configuration: Configuration}) => {
             <div className='mt-8 flex justify-end pb-12'>
               <Button
                 onClick={() => handleCheckout()}
-                // onClick={() => console.log("Clicked!")}
                 className='px-4 sm:px-6 lg:px-8'>
                 Check out <ArrowRight className='h-4 w-4 ml-1.5 inline' />
               </Button>
