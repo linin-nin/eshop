@@ -20,7 +20,7 @@ export function constructMetadata({
   title = 'Case DIY - custom high-quality phone cases',
   description = 'Create custom high-quality phone cases in seconds',
   image = '/thumbnail.png',
-  icons = '/favicon.ico',
+  icons = '/logo.svg',
 }: {
   title?: string
   description?: string
