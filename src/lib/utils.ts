@@ -17,7 +17,7 @@ export const formatPrice = (price: number) => {
 }
 
 export function constructMetadata({
-  title = 'Case DIY - custom high-quality phone cases',
+  title = 'DIYcobra - free creation of your own case',
   description = 'Create custom high-quality phone cases in seconds',
   image = '/thumbnail.png',
   icons = '/logo.svg',
@@ -40,7 +40,6 @@ export function constructMetadata({
       title,
       description,
       images: [image],
-      // creator: '@joshtriedcoding',
     },
     icons,
     metadataBase: new URL("https://eshop-self.vercel.app/")
